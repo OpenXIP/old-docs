@@ -1,0 +1,15 @@
+The 18 May 2007 prototype release of XIP includes a set of classes based on the Open Inventor API that can be used to create XIP Applications using c++.  Binaries for Microsoft Windows only are included in this release.  Later releases will have binaries for other operating environments.  The following files are included in this directory:
+
+XIP_dlls.zip - are the XIP Application libraries compiled for Microsoft Windows platforms.
+
+XIP_include.zip - are the c++ headers needed to compile XIP Open Inventor modules into an XIP Application.
+
+XIP_source.zip - are the c++ source files for the XIP Application libraries.
+
+XIP_ExampleSceneGraphs.zip - are a set of example scene graphs illustrating how to use the XIP Application libraries.  In this release, example scene graphs using the graphical overlay classes and example scene graphs using the ITK libraries are included. The XIP Application Builder (not yet available as open source) will be able to read, edit, and run these scene graphs.  (In the interim, as a placeholder until the open source XIP Builder is available, one can get a builder application from Siemens Corporate Research that also understands these file formats.)  It is possible to instantiate these scene graphs within an application utilizing Open Inventor classes.
+
+All of the above may reference a stock Open Inventor installation for MS Windows, which is not part of XIP, nor is it distributed with XIP.  An installer for this stock reference Open Inventor implementation is available under the LGPL license from the following URL:
+
+http://www.mevislab.de/fileadmin/Download/oiv-2_3_2/sgi-OpenInventor.exe
+
+This Open Inventor installation must be installed in order for the above XIP code to work.
