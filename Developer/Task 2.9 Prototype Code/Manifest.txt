@@ -1,15 +1,21 @@
-The 18 May 2007 prototype release of XIP includes a set of classes based on the Open Inventor API that can be used to create XIP Applications using c++.  Binaries for Microsoft Windows only are included in this release.  Later releases will have binaries for other operating environments.  The following files are included in this directory:
+The 17 August 2007 prototype release of XIP includes a set of classes based on the Open Inventor (tm) API that can be used to create XIP Applications using c++, plus binaries for a builder tool that a developer can use to graphically interconnect, manipulate, and save an Open Inventor(tm) scene graph.  Binaries for Microsoft Windows only are included in this release.  Later releases will have binaries for other operating environments. No license files are needed to run the XIP Builder tool in this release.    
 
-XIP_dlls.zip - are the XIP Application libraries compiled for Microsoft Windows platforms.
+The following files are included in this directory:
+
+xipbuilder-win32.zip - 32 bit MS Windows binary files for the XIP Builder tools, the XIP libraries, and external libraries needed to run XIP and the XIP Builder.  This zip file also includes a set of example scene graphs illustrating how to use the XIP Application libraries.  This release includes the following example scene graphs:
+
+     -- using the graphical overlay classes 
+     -- using the ITK libraries
+     -- using the texture mapping engine
+     -- using the hardware-based modular renderer (volume rendering, MinIP, MaxIP, etc.)
+     -- using the pixel shaders to do image processing (filtering)
+     -- reading DICOM data out of a DICOM image object
+
+The XIP Application Builder will be able to read, edit, and run these scene graphs.  It is possible to instantiate these scene graphs within an application utilizing Open Inventor database classes (i.e., save the scene graph as a .iv file, then load and run the scene graph described by the .iv file using the stock Open Inventor classes for interpreting .iv (inventor) files).
+
+xip_ext-win.zip - are external libraries needed to build XIP from sources.  Please see the web sites for the respective libraries for sources and licenses.  These are only provided as a convenience for XIP developers.
 
 XIP_include.zip - are the c++ headers needed to compile XIP Open Inventor modules into an XIP Application.
 
 XIP_source.zip - are the c++ source files for the XIP Application libraries.
 
-XIP_ExampleSceneGraphs.zip - are a set of example scene graphs illustrating how to use the XIP Application libraries.  In this release, example scene graphs using the graphical overlay classes and example scene graphs using the ITK libraries are included. The XIP Application Builder (not yet available as open source) will be able to read, edit, and run these scene graphs.  (In the interim, as a placeholder until the open source XIP Builder is available, one can get a builder application from Siemens Corporate Research that also understands these file formats.)  It is possible to instantiate these scene graphs within an application utilizing Open Inventor classes.
-
-All of the above may reference a stock Open Inventor installation for MS Windows, which is not part of XIP, nor is it distributed with XIP.  An installer for this stock reference Open Inventor implementation is available under the LGPL license from the following URL:
-
-http://www.mevislab.de/fileadmin/Download/oiv-2_3_2/sgi-OpenInventor.exe
-
-This Open Inventor installation must be installed in order for the above XIP code to work.
