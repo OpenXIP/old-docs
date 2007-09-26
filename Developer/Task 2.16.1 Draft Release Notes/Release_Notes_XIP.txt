@@ -32,11 +32,10 @@
                       1.0 {Product} Introduction
 ================================================================
 
-# Briefly describe the application and its intended running environment 
-# in a few sentences. Follow with a URL for your website, where appropriate.
-    
     This document contains the release notes for the eXtensible Imaging 
-    Platform (XIP) project Release 1.0, Version 0.2.  
+    Platform (XIP) project Release 1.0, Version 0.2.  This version is for
+    alpha testing, early integtration with other projects, and for further
+    development.
 
     The XIP Application Libraries support rapidly building imaging and 
     visualization applications. The modules in the XIP Application 
@@ -54,14 +53,15 @@
     classification into a caBIG compatibility level.  The intention of this 
     release of the XIP project is to support caBIG compatibility level silver.
 
-    --  URL  
+    --  URL http://gforge.nci.nih.gov/projects/xip/ 
 
 ================================================================
                       2.0 Release History
 ================================================================
    
 
-    This is the first release of the XIP project.
+    This version is leading to the first release of the XIP project, and is the
+    second alpha version distributed.
 
 
 ================================================================
@@ -83,11 +83,9 @@
                       4.0 Bug fixes Since Last Release
 ================================================================
 
-# Provide a numbered list with brief descriptions of bugs fixed since the last 
-# release. If the bugs are identified in a tracking system, you may want to 
-# include those numbers with each item listed.    
 
-    This is the first release
+    Given that this is the first publically available version that is being
+    widely distributed, there are no bug reports in the tracking system.
    
   
 ================================================================
@@ -102,77 +100,65 @@
     - Source for the XIP Builder tool is not yet included
 
 
-# You can include General Comments in this section, if appropriate.
+================================================================
+                     6.0 Notes
+================================================================
 
-The build scripts needs an installation of Open Inventor(tm) include files and libraries in order to build. THe build scripts expects that the OIV_PATH environment variable points to the top level directory of the Open Inventor(tm) installation.
+The build scripts needs an installation of Open Inventor(tm) include files 
+and libraries in order to build. THe build scripts expects that the OIV_PATH 
+environment variable points to the top level directory of the Open Inventor(tm) 
+installation.
 
-The build scripts needs an installation of ITK include files and libraries in order to build.  THe build scripts expects that the ITK_PATH environment variable points to the top level directory of the ITK installation in order to build.
+The build scripts needs an installation of ITK include files and libraries in 
+order to build.  THe build scripts expects that the ITK_PATH environment variable 
+points to the top level directory of the ITK installation in order to build.
 
-THe build scripts expects that the FT2_PATH environment variable points to the top level directory of the FT2 installation in order to build.
+THe build scripts expects that the FT2_PATH environment variable points to the 
+top level directory of the FT2 installation in order to build.
 
 
 ================================================================
-                	6.0 Bug Reports and Support
+                	7.0 Bug Reports and Support
 ================================================================
 
-# Provide instructions for submitting bug reports and obtaining support. This may 
-# include a url and instructions for a bug tracking system, email addresses, 
-# phone numbers, etc. 
-
-# Examples:
-
-    Send email to {email address} to request support or to report a bug.
-
-    In addition, mailing lists are used by the {Product} developer community to 
-    exchange ideas and make announcements. You can subscribe at these addresses:
-
-	{listserv address}
-
-	{listserv address}
+    Send email to tarboxl @ mir.wustl.edu to request support or to report a bug.
 
 
 ================================================================
-                     	7.0 Documentation
+                     	8.0 Documentation
 ================================================================
 
-# List available documentation for this version of software. If the location
-# of documentation is not available at release time, attempt to list its
-# future general location (give anticipated dates) or provide a link to
-# a temporary location with available dates and an anticipated future 
-# documentation location. Examples are shown below.
-    
-    Detailed documentation is available at the following locations:
 
-        {Product} Technical Guide: 
+    The main page of the XIP wiki, where helpful hints, instructions, and installation 
+    notes can be found is currently located at:
 
-        {URL}    
-    
-       The {Product} Installation Guide can be downloaded via ftp:
+        https://collab01a.scr.siemens.com/xipwiki/index.php/Main_Page
+ 
+    Details about XIP Builder can now be found here:
 
-        --  ftp://ftp1.address
+        https://collab01a.scr.siemens.com/xipwiki/index.php/XipBuilder
+
+    Note that the above locations may change.
+
+    Detailed project documentation is available at:
+
+        http://gforge.nci.nih.gov/projects/xip/
+
+    The source code is set up for auto API documentation using Doxygen and similar programs.
 
 
 ================================================================
-                    	8.0 References
+                    	9.0 References
 ================================================================
     
-# List appropriate web pages with brief annotations.
+    Open Inventor(tm) information and source code is available at:
 
-#Examples: 
+        http://oss.sgi.com/projects/inventor/
 
-The following urls access web pages relevant to {Product}.
 
-    caBIG Home Page
-     
-    --  http://cabig.nci.nih.gov/
-    
-    NCICB Download Center
+    Insight Tool Kit (ITK) information and source code is available at:
 
-    --  http://ncicb.nci.nih.gov/download/
-
-    caGrid
-
-    -- https://cabig.nci.nih.gov/workspaces/Architecture/caGrid
+        http://www.itk.org
 
 
 //end
