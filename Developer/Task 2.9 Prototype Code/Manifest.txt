@@ -1,21 +1,50 @@
-The 17 August 2007 prototype release of XIP includes a set of classes based on the Open Inventor (tm) API that can be used to create XIP Applications using c++, plus binaries for a builder tool that a developer can use to graphically interconnect, manipulate, and save an Open Inventor(tm) scene graph.  Binaries for Microsoft Windows only are included in this release.  Later releases will have binaries for other operating environments. No license files are needed to run the XIP Builder tool in this release.    
+The 1 November 2007 prototype release of XIP includes a set of classes based on the Open Inventor (tm) API that can be used to create XIP Applications using c++, plus binaries for a builder tool that a developer can use to graphically interconnect, manipulate, and save an Open Inventor(tm) scene graph.  Binaries for Microsoft Windows only are included in this release.  Later releases will have binaries for other operating environments. No license files are needed to run the XIP Builder tool in this release.    
 
 The following files are included in this directory:
 
-xipbuilder-win32.zip - 32 bit MS Windows binary files for the XIP Builder tools, the XIP libraries, and external libraries needed to run XIP and the XIP Builder.  This zip file also includes a set of example scene graphs illustrating how to use the XIP Application libraries.  This release includes the following example scene graphs:
+xip-win32.zip - 
+
+32 bit MS Windows binary files for the XIP Builder tools, the XIP libraries, and external libraries needed to run XIP and the XIP Builder.  This zip file also includes a set of example scene graphs illustrating how to use the XIP Application libraries.  This release includes the following example scene graphs:
 
      -- using the graphical overlay classes 
      -- using the ITK libraries
+     -- using the VTK libraries
      -- using the texture mapping engine
+     -- using the XIP MPR renderer (better performance than VTK)
      -- using the hardware-based modular renderer (volume rendering, MinIP, MaxIP, etc.)
      -- using the pixel shaders to do image processing (filtering)
+     -- using the remote (client-server) renderer
      -- reading DICOM data out of a DICOM image object
+     -- using DICOM Presentation States
 
 The XIP Application Builder will be able to read, edit, and run these scene graphs.  It is possible to instantiate these scene graphs within an application utilizing Open Inventor database classes (i.e., save the scene graph as a .iv file, then load and run the scene graph described by the .iv file using the stock Open Inventor classes for interpreting .iv (inventor) files).
 
-xip_ext-win.zip - are external libraries needed to build XIP from sources.  Please see the web sites for the respective libraries for sources and licenses.  These are only provided as a convenience for XIP developers.
+This is the only file that need be downloaded to create and run scene graphs
 
-XIP_include.zip - are the c++ headers needed to compile XIP Open Inventor modules into an XIP Application.
 
-XIP_source.zip - are the c++ source files for the XIP Application libraries.
 
+xipbuilder-win32.zip - 
+
+are the binaries for the XIP Builder tool, but without the XIP libraries.  This file is provided for those who will compile the XIP libraries from sources, hence do not need binaries for the XIP libraries.  Since its contents are included in xip-win32.zip, it is not needed if you have downloaded xip-win32.zip.
+
+
+
+XIP_include.zip - 
+
+are the c++ headers needed to compile XIP Open Inventor modules into a c++ XIP Application, as well as to compile the XIP libraries themselves.
+
+
+
+xipext-win32.zip - 
+
+are external libraries needed to build XIP from sources.  These are only provided as a convenience for XIP developers.
+
+
+
+XIP_source.zip - 
+
+are the c++ source files and build scripts for the XIP Application libraries, along with the sources for the external libraries.
+
+
+
+Also of interest would be the test data sets and scripts found in Task 2.7, which are useful for verifying that the base features of the XIP libraries are working correctly.
