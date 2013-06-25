@@ -1,0 +1,107 @@
+Release Notes
+=============
+ 
+  Product:	AVT
+  Version:	2EXT
+  Build:    597
+  Date:	September, 2010
+
+Contents
+--------
+
+   1. Introduction
+   2. Release History
+   3. Features Addressed in This Release
+   4. Defects Addressed in This Release   
+   5. Known Issues/Defects
+   6. Bug Reports, Feature Requests, and Support
+   7. Documentation and Files
+   8. NCI CBIIT Web Pages
+
+Introduction
+---------------------------
+
+The Algorithm Validation Toolkit (AVT) provides tools to 
+support medical image measurement validation research.  The 
+goal of AVT is to provide the caBIG community with sharable
+tools to support their measurement research, so that when a 
+research study is published, and the image data used in it is
+released on caGrid, the support software can also be released,
+so that another researcher can more readily replicate the
+experiment and/or extend it.
+
+AVT provides tools to:
+* Create gold standard markups
+* Carry out interactive markup experiments under tightly
+  controlled conditions
+* Carry out algorithmic markup experiments on large collections
+  of images
+* Conduct exploratory data analysis and hypothesis testing on
+  large collections of markups
+
+Release History
+------------------------
+    * AVT 2			-- June 	2009
+
+Features Addressed in This Release
+----------------------------------
+* ITK-based open source segmentation algorithm
+* Accuracy
+* Sources of Variation
+* Reader Variability
+* AIM 2.0
+* Example data from the CDRH Thoracic Phantom collection
+* Download from NBIA
+* Multiple Regression Analysis 
+* Factorial ANOVA Analysis 
+* Visually Compare Segmentations in 3D MPR Viewer
+* Improved contour editing
+* Markup seed points for algorithms
+* Markup RECIST Diameter 
+* Markup WHO Diameters 
+* AVT2 Coding Scheme
+
+Defects addressed in This Release
+---------------------------------
+This is the first AVT release that will have a user community.
+The next release's notes will list bugs fixed since this release.
+
+
+Known Issues/Defects
+------------------------
+
+* Limited set of screen sizes tested.  Sizes below 1280x1024 or above 1600x1200 sometimes fail.
+* Data-dependent statistics server crashes.
+* Contour editor truncates coordinates instead of rounding.
+* Contour cannot handle non-contiguous region of interest.
+* Image viewing panes do not refresh after certain actions for which they should refresh.
+* Histogram plot sometimes gives wrong vertical scale.
+* AE slowed down by trace outputs.
+* Spaces in folder names, for installation or data, cause failures.
+* Not tested on Windows 7
+
+See the GForge tracker for the latest use cases (implemented 
+and deferred), existing open defects, community requests, 
+resolutions and feature requests. 
+
+
+Bug Reports, Feature Requests, And Support
+------------------------------------------
+
+Send email to ncicb@pop.nci.nih.gov to request technical support or 
+report a bug or request a new feature.
+
+Documentation And Files
+-----------------------
+
+Links to all documentation and files can be found at: 
+
+https://gforge.nci.nih.gov/frs/?group_id=636
+
+
+NCICB Web Pages
+---------------
+
+    * The NCI Center for Bioinformatics, http://ncicb.nci.nih.gov/
+    * NCICB Application Support, http://ncicb.nci.nih.gov/NCICB/support
+    * NCICB Download Center, http://ncicb.nci.nih.gov/download/
